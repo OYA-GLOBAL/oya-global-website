@@ -258,6 +258,8 @@ nav {
 }
 /* MOBILE */
 
+/* MOBILE */
+
 @media (max-width: 768px) {
 
     nav {
@@ -298,5 +300,22 @@ nav {
 
     .service-card span {
         margin-bottom: 20px;
+    }
+
+    .focus {
+        padding: 80px 24px;
+    }
+
+    .focus-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .focus h2 {
+        font-size: 2.8rem;
+    }
+
+    .focus-lead {
+        font-size: 1rem;
     }
 }
