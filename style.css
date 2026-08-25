@@ -217,8 +217,45 @@ nav {
     font-size: 0.9rem;
     line-height: 1.7;
 }
-/* MOBILE */
+/* CURRENT FOCUS */
 
+.focus {
+    padding: 130px 40px;
+    background-color: #080808;
+    border-top: 1px solid #211c17;
+}
+
+.focus-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.focus h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.focus-lead {
+    color: #bdb9b0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+.product-list {
+    border-top: 1px solid #3a3025;
+}
+
+.product-list div {
+    padding: 17px 0;
+    border-bottom: 1px solid #3a3025;
+    color: #e3dfd6;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
 /* MOBILE */
 
 @media (max-width: 768px) {
