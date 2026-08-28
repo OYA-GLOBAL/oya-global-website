@@ -327,6 +327,60 @@ nav {
 .text-link:hover {
     opacity: 0.7;
 }
+/* HOW OYA WORKS */
+
+.process {
+    padding: 130px 40px;
+    background-color: #080808;
+}
+
+.process-heading {
+    max-width: 750px;
+    margin-bottom: 70px;
+}
+
+.process-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #3a3025;
+}
+
+.process-step {
+    padding: 40px 30px 20px 0;
+}
+
+.process-step:not(:first-child) {
+    padding-left: 30px;
+    border-left: 1px solid #3a3025;
+}
+
+.process-step span {
+    display: block;
+    color: #c77b3c;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.process-step h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.process-step p {
+    color: #96928b;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
 /* MOBILE */
 
 @media (max-width: 768px) {
