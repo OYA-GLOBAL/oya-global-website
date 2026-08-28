@@ -381,6 +381,87 @@ nav {
     font-size: 0.9rem;
     line-height: 1.7;
 }
+/* FINAL CTA */
+
+.final-cta {
+    padding: 150px 40px;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(190, 108, 48, 0.12),
+            transparent 40%
+        ),
+        #0d0d0d;
+}
+
+.final-cta .section-container {
+    max-width: 900px;
+}
+
+.final-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.final-cta .section-container > p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #96928b;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #080808;
+    border-top: 1px solid #3a3025;
+    padding: 60px 40px 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand h3 {
+    color: #d9a441;
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: #77736d;
+    font-size: 0.85rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.footer-links a {
+    color: #bdb9b0;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+    color: #d9a441;
+}
+
+.footer-bottom {
+    padding-top: 25px;
+    border-top: 1px solid #211c17;
+    color: #5f5b55;
+    font-size: 0.75rem;
+}
 /* MOBILE */
 
 @media (max-width: 768px) {
@@ -405,11 +486,15 @@ nav {
         font-size: 1rem;
     }
 
-    .services {
+    .services,
+    .focus,
+    .connections,
+    .process {
         padding: 80px 24px;
     }
 
-    .service-grid {
+    .service-grid,
+    .process-grid {
         grid-template-columns: 1fr;
     }
 
@@ -425,10 +510,6 @@ nav {
         margin-bottom: 20px;
     }
 
-    .focus {
-        padding: 80px 24px;
-    }
-
     .focus-layout {
         grid-template-columns: 1fr;
         gap: 45px;
@@ -440,5 +521,47 @@ nav {
 
     .focus-lead {
         font-size: 1rem;
+    }
+
+    .connection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .connection-card,
+    .connection-card + .connection-card {
+        padding: 45px 0;
+        border-left: none;
+    }
+
+    .connection-card + .connection-card {
+        border-top: 1px solid #3a3025;
+    }
+
+    .process-step,
+    .process-step:not(:first-child) {
+        padding: 30px 0;
+        border-left: none;
+        border-bottom: 1px solid #3a3025;
+    }
+
+    .process-step span {
+        margin-bottom: 20px;
+    }
+
+    .final-cta {
+        padding: 100px 24px;
+    }
+
+    .final-cta h2 {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 50px 24px 25px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
     }
 }
