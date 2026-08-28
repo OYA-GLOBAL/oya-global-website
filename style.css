@@ -40,11 +40,17 @@ nav {
 }
 
 .logo {
-    color: #d9a441;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.4rem;
-    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
 
 .nav-links {
     display: flex;
